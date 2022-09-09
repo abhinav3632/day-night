@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day&night</title>
+    <style>
+        body {
+             background-image: url('./4426674.png');
+             background-size: cover;   
+            }
+            #off{
+                display: flex;
+                margin-top: 350px;
+                margin-left: 710px;
+                cursor: pointer;
+                height: 70px;
+                width: 70px;
+            }
+            .dark-mode {
+             background-image: url('./wp8640161-day-night-wallpapers.png'); 
+            }
+    </style>
+</head>
+<body>
+    <div class="daymode">
+        <img src="https://img.icons8.com/ios/50/000000/toggle-off.png" id="off" onclick="myFunction()"/>
+    </div>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           var image = document.getElementById('off');
+           element.classList.toggle("dark-mode");
+           if(image.src.match("https://img.icons8.com/ios/50/000000/toggle-on--v2.png")){
+            image.src="https://img.icons8.com/ios/50/000000/toggle-off--v2.png";
+           }else{
+            image.src="https://img.icons8.com/ios/50/000000/toggle-on--v2.png";
+           }
+           }
+    </script>
+</body>
+</html>
